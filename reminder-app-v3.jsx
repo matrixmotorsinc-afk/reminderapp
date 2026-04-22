@@ -231,7 +231,7 @@ export default function ReminderApp() {
   ];
 
   // Appointment type icons
-  const apptIcon={Doctor:"👨‍⚕️",Dentist:"🦷","Eye Doctor":"👁️",Specialist:"🔬","Lab/Blood Work":"🩸","Imaging (X-Ray/MRI)":"🩻",Therapy:"🧠",Other:"🏥"};
+  const apptIcon={Doctor:"👨⚕️",Dentist:"🦷","Eye Doctor":"👁️",Specialist:"🔬","Lab/Blood Work":"🩸","Imaging (X-Ray/MRI)":"🩻",Therapy:"🧠",Other:"🏥"};
 
   return (
     <div style={{minHeight:"100vh",background:"#0f0e17",fontFamily:"'Georgia','Times New Roman',serif",color:"#fffffe"}}>
@@ -502,7 +502,7 @@ export default function ReminderApp() {
                           {m.frequency&&<span style={{fontSize:12,color:"#5a5a7a"}}>· {m.frequency}</span>}
                         </div>
                         <div style={{display:"flex",gap:10,flexWrap:"wrap"}}>
-                          {m.doctor&&<span style={{fontSize:11,color:"#5a5a7a"}}>👨‍⚕️ Dr. {m.doctor}</span>}
+                          {m.doctor&&<span style={{fontSize:11,color:"#5a5a7a"}}>👨⚕️ Dr. {m.doctor}</span>}
                           {m.startDate&&<span style={{fontSize:11,color:"#5a5a7a"}}>Started: {formatDate(m.startDate)}</span>}
                           {m.endDate&&<span style={{fontSize:11,color:"#5a5a7a"}}>Ends: {formatDate(m.endDate)}</span>}
                         </div>
@@ -675,3 +675,4 @@ export default function ReminderApp() {
     </div>
   );
 }
+
